@@ -6,3 +6,6 @@ const cliente = {
     email: "andre@email.com"
 }
 
+
+console.log(`Meu nome é ${cliente.nome} eu tenho ${cliente.idade} 
+anos, meu cpf é ${cliente.cpf.substring(0, 3)}`);
