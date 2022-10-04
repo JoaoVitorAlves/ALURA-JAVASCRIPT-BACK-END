@@ -1,0 +1,71 @@
++ O que são classes ?
+
+* São modelos usados para a criação de objetos.
+
+1 - Vão ser definidas as propriedades que precisa.
+
+2 - Comportamentos que precisamos que são os metodos.
+
+* Exemplo de Classe em JS.
+
+class Pessoa {
+    constructor(nome, sobrenome, cpf, email){
+        this.nome = nome
+        this.sobrenome = sobrenome
+        this.cpf = cpf
+        this.email = email
+    }
+}
+
++ Atributos e metodos.
+
+* A classe define os atributos (características) e os métodos (comportamentos) de objetos.
+
+* Exemplo:
+
+class Pessoa {
+    constructor(nome, sobrenome, cpf, email){
+        this.nome = nome
+        this.sobrenome = sobrenome
+        this.cpf = cpf
+        this.email = email
+    }
+
+    exibirNomeCompleto(){
+        console.log(`${this.nome} ${this.sobrenome}`)
+    }
+}
+
++ Herança
+
+* É um mecanismo da Orientação a objetos que permite que uma classe herde características
+de uma outra classe.
+
+* Exemplo de Herança em JS:
+
+palavra reservada: extends, super -> estamos herdando as características uma determinada classe.
+
+class Programador extends Pessoa{
+    constructor(nome, sobrenome, cpf, email, linguagem){
+        super(nome, sobrenome, cpf, email)
+        this.linguagem = linguagem
+    }
+}
+
++ Objeto
+
+* O Objeto é a instância de uma classe.
+
+* Exemplo:
+
+const novoDev = new Programador("Andre","Silva","andre@email.com","JavaScript")
+
+ + Resumo:
+
+ 1 - A Orientação a objetos é um modelo de (estilo) de se programar.
+
+ 2 - Na Orientação a objetos a idéia é transformar coisas do mundo para o código.
+
+ 3 - Uma classe tem atributos e métodos.
+
+ 4 - Objeto é uma instância de classe em memória.
