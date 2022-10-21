@@ -11,7 +11,7 @@ function encontrarMenor(pivo, array) {
         }
     }
     trocaLugar(array, array.indexOf(pivo), menores)
-    re
+    return array
 }
 
 function trocaLugar(array, de, para) {
